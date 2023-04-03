@@ -86,7 +86,7 @@
                 android:textColorHint="@color/black"></EditText>
 
             <Button
-                android:id="@+id/button_login"
+                android:id="@+id/Login"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
