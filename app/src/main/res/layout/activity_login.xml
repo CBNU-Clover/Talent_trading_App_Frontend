@@ -85,7 +85,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/idText"
+                android:id="@+id/login_Nickname"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -99,7 +99,7 @@
                 android:textColorHint="@color/black"></EditText>
 
             <EditText
-                android:id="@+id/passwordText"
+                android:id="@+id/login_passWord"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -114,6 +114,7 @@
                 android:textColorHint="@color/black"></EditText>
 
             <Button
+                android:id="@+id/Login"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
