@@ -4,37 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/Login_Button"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:text="로그인"
-            android:fontFamily="@font/nanumbarunpenb"
-            android:textColor="@color/white"
-            android:textSize="20dp">
-        </Button>
 
-        <Button
-            android:id="@+id/Register_Button"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="60dp"
-            android:fontFamily="@font/nanumbarunpenb"
-            android:text="회원가입"
-            android:textColor="@color/white"
-            android:textSize="20dp"></Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/logo11"></ImageView>
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/search"></ImageView>
+
+            <ImageButton
+                android:id="@+id/Register_Button"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/menu"/>
+
+            <ImageButton
+                android:id="@+id/Login_Button"
+                android:layout_width="70dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/mypage" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:text="실시간 거래 게시글"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:textColor="@color/black"
+                android:textSize="30dp">
+            </TextView>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ex1"></ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="인기 거래 게시글"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:textColor="@color/black"
+                android:textSize="30dp">
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/chat_button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="95dp"
+                android:background="@drawable/chat"/>
+
+            <ImageButton
+                android:id="@+id/board_button"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="105dp"
+                android:background="@drawable/trade"/>
+
+        </LinearLayout>
 
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
-    tools:context=".MemberFunction.RegisterMember">
+    android:background="@color/white"
+    tools:context=".RegisterMember">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +15,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/backbutton">
+            </ImageButton>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -24,6 +30,7 @@
                 android:text="회원 가입"
                 android:fontFamily="@font/nanumbarunpenb"
                 android:textColor="@color/black"
+                android:layout_marginLeft="100dp"
                 android:textSize="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp">
@@ -38,11 +45,24 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/idText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="80dp"
+                android:drawableStart="@drawable/ic_baseline_person_24"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:hint="아이디"
+                android:fontFamily="@font/nanumbarunpenb"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"></EditText>
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:drawableStart="@drawable/ic_baseline_person_24"
                 android:drawableLeft="@drawable/ic_baseline_person_24"
                 android:hint="이름"
@@ -52,7 +72,7 @@
                 android:textColorHint="@color/black"></EditText>
 
             <EditText
-                android:id="@+id/password"
+                android:id="@+id/passwordText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -67,7 +87,7 @@
                 android:textColorHint="@color/black"></EditText>
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/emailText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -80,41 +100,33 @@
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"></EditText>
             <EditText
-                android:id="@+id/phone_number"
+                android:id="@+id/phoneText"
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawableLeft="@drawable/ic_phone"
                 android:hint="전화번호"
                 android:fontFamily="@font/nanumbarunpenb"
                 android:padding="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"></EditText>
-            <EditText
-                android:id="@+id/nickname"
+
+
+
+
+            <Button
                 android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:hint="닉네임"
+                android:layout_marginTop="60dp"
+                android:text="가입하기"
                 android:fontFamily="@font/nanumbarunpenb"
-                android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"></EditText>
-
-
-
-                <Button
-                    android:id="@+id/registerButton"
-                    android:layout_width="280dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="60dp"
-                    android:text="가입하기"
-                    android:fontFamily="@font/nanumbarunpenb"
-                    android:textColor="@color/white"
-                    android:textSize="20dp">
-                </Button>
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:id="@+id/registerButton">
+            </Button>
 
         </LinearLayout>
     </LinearLayout>
