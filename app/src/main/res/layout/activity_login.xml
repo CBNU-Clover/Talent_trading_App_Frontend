@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="로그인"
-                android:fontFamily="@font/nanumbarunpenb"
+                android:fontFamily="@font/gamjaflower"
                 android:textColor="@color/black"
                 android:layout_marginLeft="105dp"
                 android:textSize="35dp"
