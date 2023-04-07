@@ -51,12 +51,10 @@
             android:orientation="vertical">
 
 
-            <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="540dp"
-            android:layout_gravity="left"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/ex1"></ImageView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
     </LinearLayout>
         <LinearLayout

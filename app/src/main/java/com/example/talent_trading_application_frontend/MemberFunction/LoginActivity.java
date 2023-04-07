@@ -1,12 +1,17 @@
 package com.example.talent_trading_application_frontend.MemberFunction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.talent_trading_application_frontend.MainActivity;
 import com.example.talent_trading_application_frontend.R;
 import com.example.talent_trading_application_frontend.domain.Member;
 import com.example.talent_trading_application_frontend.dto.LoginDTO;
@@ -26,6 +31,24 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        ImageButton backlogin = (ImageButton) findViewById(R.id backlogin);
+        backlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button register_btn = (Button) findViewById(R.id register_btn);
+        register_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), RegisterMember.class);
+                startActivity(intent);
+            }
+        });
 
         Login();
     }

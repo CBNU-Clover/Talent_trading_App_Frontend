@@ -18,6 +18,7 @@
             android:orientation="horizontal">
 
             <ImageButton
+                android:id="@+id/backlogin"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
@@ -125,15 +126,15 @@
                 android:textSize="20dp">
             </Button>
 
-            <TextView
-                android:id="@+id/registerButton"
+            <Button
+                android:id="@+id/register_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:text="회원가입"
                 android:fontFamily="@font/nanumbarunpenb"
-                android:textSize="18dp"></TextView>
+                android:textSize="18dp"></Button>
         </LinearLayout>
     </LinearLayout>
 

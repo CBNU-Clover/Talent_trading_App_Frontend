@@ -31,14 +31,14 @@
                 android:src="@drawable/search"></ImageView>
 
             <ImageButton
-                android:id="@+id/Register_Button"
+                android:id="@+id/set_btn"
                 android:layout_width="50dp"
                 android:layout_height="60dp"
                 android:layout_marginTop="3dp"
                 android:background="@drawable/menu"/>
 
             <ImageButton
-                android:id="@+id/Login_Button"
+                android:id="@+id/mypage_btn"
                 android:layout_width="70dp"
                 android:layout_height="55dp"
                 android:layout_marginTop="5dp"
@@ -94,14 +94,14 @@
 
 
             <ImageButton
-                android:id="@+id/chat_button"
+                android:id="@+id/chat_btn"
                 android:layout_width="70dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="95dp"
                 android:background="@drawable/chat" />
 
             <ImageButton
-                android:id="@+id/board_button"
+                android:id="@+id/board_btn"
                 android:layout_width="70dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="105dp"
